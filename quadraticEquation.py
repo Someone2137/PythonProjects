@@ -1,6 +1,6 @@
 import cmath
 
-a = int(input("Enter an integer number (a!= 0):"))
+a = int(input("Enter a positive integer number: "))
 if a <= 0:
     raise ValueError("Please enter only positive numbers.")
 b = int(input("Enter an integer number: "))
@@ -15,6 +15,6 @@ if delta > 0:
     print("Second solution: ", solution2)
 elif delta == 0:
     solution3 = -b / (2 * a)
-    print("There is one solution: ",solution3)
+    print("There is one solution: ", solution3)
 elif delta < 0:
     print("There are no real solutions to this equation.")
