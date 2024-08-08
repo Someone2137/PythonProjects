@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv(r"C:\Users\marty\PycharmProjects\data.csv", header=None, names=["Sex", "Feature1","Feature2", "Feature3", "Feature4", "Feature5", "Feature6", "Feature7", "Feature8"])
+data = pd.read_csv(r"C:\Users\marty\PycharmProjects\data.csv", header=None, names=["Sex", "Variable1", "Variable2", "Variable3", "Variable4", "Variable5", "Variable6", "Variable7", "Variable8"])
 
 sexCount = data["Sex"].value_counts()
 sexPercentage = data["Sex"].value_counts(normalize=True) * 100
@@ -17,7 +17,7 @@ result.index = ["Male", "Female", "Infant"]
 
 print(result, "\n")
 
-quantativeValues = ["Feature1", "Feature2", "Feature3", "Feature4", "Feature5", "Feature6", "Feature7", "Feature8"]
+quantativeValues = ["Variable1", "Variable2", "Variable3", "Variable4", "Variable5", "Variable6", "Variable7", "Variable8"]
 quantativeTable = data[quantativeValues]
 
 summaryTable = pd.DataFrame(
